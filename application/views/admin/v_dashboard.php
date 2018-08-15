@@ -180,7 +180,8 @@
     }
 
 
-    $('#validasi-peserta').on('click','.tombol-validasi', function(){
+    $('#validasi-peserta').on('click','.tombol-validasi', function(e){
+      e.preventDefault();
       var kegiatan_kode = $(this).attr('data-kegiatan');
       var id_jadwal = $(this).attr('data-id_jadwal');
       var nik = $(this).attr('data-nik');

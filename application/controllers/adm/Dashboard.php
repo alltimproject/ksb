@@ -56,7 +56,6 @@ class Dashboard extends CI_Controller{
     }// end if
     else{
       $output .= '
-
       ';
     }
     echo $output;
